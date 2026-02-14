@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/elliott-superposition", label: "Superposición" },
   { href: "/miner-dual-tf-system", label: "Dual TF" },
   { href: "/fibonacci-dummies", label: "Fibonacci" },
+  { href: "/miner-cap5-completo", label: "Price Time Momentum" },
 ];
 
 export default function Navbar() {
