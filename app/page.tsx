@@ -17,7 +17,7 @@ export default function Home() {
           </p>
         </header>
 
-        <section className="grid gap-6 lg:grid-cols-3">
+        <section className="grid gap-6 lg:grid-cols-4">
           <Link
             href="/elliott-full-cycle"
             className="group rounded-2xl border border-[#22335a] bg-gradient-to-br from-[#0c1326] to-[#0a1022] p-6 transition hover:border-[#3b5aa5]"
@@ -72,6 +72,44 @@ export default function Home() {
               Comparación 30m vs 3m con MM30, MACD y Elliott para decidir entradas.
             </p>
             <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-[#7fb2ff]">
+              Abrir pantalla
+              <span className="transition group-hover:translate-x-1">→</span>
+            </div>
+          </Link>
+
+          <Link
+            href="/fibonacci-dummies"
+            className="group rounded-2xl border border-[#1c2a3b] bg-gradient-to-br from-[#0b111b] to-[#091019] p-6 transition hover:border-[#2e4968]"
+          >
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#2a3f55] bg-[#0e1724] px-3 py-1 text-[11px] font-semibold text-[#7fb2ff]">
+              Fibonacci
+            </div>
+            <h2 className="mb-2 text-xl font-semibold text-white">
+              Fibonacci para Dummies
+            </h2>
+            <p className="text-sm text-[#8ea1c2]">
+              Explicación completa de Fibonacci en trading sin complicaciones.
+            </p>
+            <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-[#7fb2ff]">
+              Abrir pantalla
+              <span className="transition group-hover:translate-x-1">→</span>
+            </div>
+          </Link>
+
+          <Link
+            href="/miner-cap5-completo"
+            className="group rounded-2xl border border-[#2b1f2a] bg-gradient-to-br from-[#140b14] to-[#1a0d12] p-6 transition hover:border-[#6e2f49]"
+          >
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#4a2c3a] bg-[#1a0e16] px-3 py-1 text-[11px] font-semibold text-[#ff7aa2]">
+              Sistema completo
+            </div>
+            <h2 className="mb-2 text-xl font-semibold text-white">
+              Miner Fibonacci Completo
+            </h2>
+            <p className="text-sm text-[#bfa7b4]">
+              Guía completa de Fibonacci de precio, tiempo y momentum con tabs interactivos.
+            </p>
+            <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-[#ff7aa2]">
               Abrir pantalla
               <span className="transition group-hover:translate-x-1">→</span>
             </div>
