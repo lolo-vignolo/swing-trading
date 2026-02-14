@@ -1,64 +1,90 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="min-h-screen bg-[#060b18] text-[#c8d8f0]">
+      <main className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-12">
+        <header className="flex flex-col gap-4">
+          <div className="text-[10px] font-semibold tracking-[0.35em] text-[#5599ff]">
+            ELLIOTT WAVES · MONER
+          </div>
+          <h1 className="text-3xl font-semibold text-white sm:text-4xl">
+            Biblioteca visual de patrones
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="max-w-2xl text-sm text-[#8ea1c2] sm:text-base">
+            Accede a las visualizaciones interactivas para estudiar la estructura de
+            ondas impulsivas, la corrección ABC y la regla de superposición.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        </header>
+
+        <section className="grid gap-6 lg:grid-cols-3">
+          <Link
+            href="/elliott-full-cycle"
+            className="group rounded-2xl border border-[#22335a] bg-gradient-to-br from-[#0c1326] to-[#0a1022] p-6 transition hover:border-[#3b5aa5]"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#2a3f73] bg-[#0f1a36] px-3 py-1 text-[11px] font-semibold text-[#7fb2ff]">
+              Vista completa
+            </div>
+            <h2 className="mb-2 text-xl font-semibold text-white">
+              5 impulsos + ABC + Superposición
+            </h2>
+            <p className="text-sm text-[#8ea1c2]">
+              Navega por el ciclo completo de Elliott, el zoom de la fase ABC y la
+              regla clave de no superposición.
+            </p>
+            <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-[#6aa6ff]">
+              Abrir pantalla
+              <span className="transition group-hover:translate-x-1">→</span>
+            </div>
+          </Link>
+
+          <Link
+            href="/elliott-superposition"
+            className="group rounded-2xl border border-[#2b1f2a] bg-gradient-to-br from-[#140b14] to-[#1a0d12] p-6 transition hover:border-[#6e2f49]"
           >
-            Documentation
-          </a>
-        </div>
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#4a2c3a] bg-[#1a0e16] px-3 py-1 text-[11px] font-semibold text-[#ff7aa2]">
+              Regla crítica
+            </div>
+            <h2 className="mb-2 text-xl font-semibold text-white">
+              Patrón de superposición
+            </h2>
+            <p className="text-sm text-[#bfa7b4]">
+              Compara escenarios con y sin solapamiento de la onda ④ sobre la onda ①
+              para validar o invalidar el conteo.
+            </p>
+            <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-[#ff7aa2]">
+              Abrir pantalla
+              <span className="transition group-hover:translate-x-1">→</span>
+            </div>
+          </Link>
+
+          <Link
+            href="/miner-dual-tf-system"
+            className="group rounded-2xl border border-[#1c2a3b] bg-gradient-to-br from-[#0b111b] to-[#091019] p-6 transition hover:border-[#2e4968]"
+          >
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#2a3f55] bg-[#0e1724] px-3 py-1 text-[11px] font-semibold text-[#7fb2ff]">
+              Sistema dual TF
+            </div>
+            <h2 className="mb-2 text-xl font-semibold text-white">
+              Miner Dual TF Momentum
+            </h2>
+            <p className="text-sm text-[#8ea1c2]">
+              Comparación 30m vs 3m con MM30, MACD y Elliott para decidir entradas.
+            </p>
+            <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-[#7fb2ff]">
+              Abrir pantalla
+              <span className="transition group-hover:translate-x-1">→</span>
+            </div>
+          </Link>
+        </section>
+
+        <section className="rounded-2xl border border-[#233054] bg-[#0b1326] p-6 text-sm text-[#8ea1c2]">
+          <div className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#6aa6ff]">
+            Guía rápida
+          </div>
+          Explora primero la vista completa para entender el ciclo y luego contrasta
+          la regla de superposición en el módulo dedicado.
+        </section>
       </main>
     </div>
   );
